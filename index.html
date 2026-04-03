@@ -17,23 +17,7 @@
     <link href="https://db.onlinewebfonts.com/c/f5a3f890b5452c92997f4f148314cd9b?family=Estrella" rel="stylesheet">
 
     <style>
-        /* ═══════════════════════════════════════
-           TWO-PHASE LOAD — main site starts hidden,
-           fades in after the opener finishes.
-        ═══════════════════════════════════════ */
-        #main-site {
-            opacity: 0;
-            pointer-events: none;
-            /* No transition here — added by JS right before reveal
-               so there's no accidental flash on load */
-        }
-        #main-site.site-visible {
-            opacity: 1;
-            pointer-events: auto;
-            transition: opacity 0.75s ease;
-        }
-
-        /* === OPENING SCREEN OVERLAY === */
+      /* === OPENING SCREEN OVERLAY === */
       @font-face {
         font-family: "Estrella Early";
         src: url('https://www.befonts.com/wp-content/uploads/2023/04/Estrella-Early.ttf') format('truetype');
@@ -139,7 +123,7 @@
         /* FONT IMPORT */
         @font-face{
             font-family: "Aisling";
-            src: url("fonts/aisling.otf") format("opentype");
+            src: url("assets/fonts/aisling.otf") format("opentype");
             font-weight: normal;
             font-style: normal;
             font-display: swap;
@@ -4760,12 +4744,6 @@
       </h1>
     </div>
 
-    <!-- ═══════════════════════════════════════════════
-         MAIN SITE — hidden until opener finishes.
-         Revealed by JS with a fade-in transition.
-    ════════════════════════════════════════════════ -->
-    <div id="main-site">
-
     <!-- Blurred Background Elements -->
     <div class="blur-bg blur-yellow"></div>
     <div class="blur-bg blur-pink"></div>
@@ -4854,14 +4832,14 @@
                 </div>
 
                 <div class="hero-person-image">
-                    <img src="J.png" alt="Taufiq Jabbar">
+                    <img src="assets/J.png" alt="Taufiq Jabbar">
                 </div>
             </div>
 
             <!-- Right Side - Featured Work -->
             <div class="hero-right">
                 <div class="featured-work-image">
-                    <img src="SHTG.jpg" alt="Featured Work">
+                    <img src="assets/SHTG.jpg" alt="Featured Work">
                 </div>
                 
                 <div class="instagram-feed-hero">
@@ -4873,7 +4851,7 @@
                         <div class="ig-three-dots">⋯</div>
                     </div>
                     <div class="ig-post">
-                        <img src="M1.png" alt="Post">
+                        <img src="assets/M1.png" alt="Post">
                     </div>
                     <div class="ig-actions">
                         <span>♡</span>
@@ -4896,26 +4874,26 @@
         <!-- Mobile-only: profile images as their own separate panel -->
         <div class="profile-images-mobile panel-reveal">
             <div class="profile-img">
-                <img src="DAS.jpg" alt="Portfolio 1">
+                <img src="assets/DAS.jpg" alt="Portfolio 1">
             </div>
             <div class="profile-img">
-                <img src="2.jpg" alt="Portfolio 2">
+                <img src="assets/2.jpg" alt="Portfolio 2">
             </div>
             <div class="profile-img">
-                <img src="3.jpg" alt="Portfolio 3">
+                <img src="assets/3.jpg" alt="Portfolio 3">
             </div>
         </div>
 
         <div class="profile-grid panel-reveal">
             <div class="profile-images profile-images-desktop">
                 <div class="profile-img">
-                    <img src="DAS.jpg" alt="Portfolio 1">
+                    <img src="assets/DAS.jpg" alt="Portfolio 1">
                 </div>
                 <div class="profile-img">
-                    <img src="2.jpg" alt="Portfolio 2">
+                    <img src="assets/2.jpg" alt="Portfolio 2">
                 </div>
                 <div class="profile-img">
-                    <img src="3.jpg" alt="Portfolio 3">
+                    <img src="assets/3.jpg" alt="Portfolio 3">
                 </div>
             </div>
 
@@ -5113,7 +5091,7 @@
                 <div class="img-notch-inner" style="border-radius: 15px;">
                     <video
                         class="cin-blur-bg"
-                        src="SFL.MP4"
+                        src="assets/SFL.MP4"
                         autoplay
                         loop
                         muted
@@ -5121,7 +5099,7 @@
                         aria-hidden="true"
                     ></video>
                     <video
-                        src="SFL.MP4"
+                        src="assets/SFL.MP4"
                         autoplay
                         loop
                         muted
@@ -5190,7 +5168,7 @@
                 <div class="img-notch-wrap" data-gallery="design">
                     <div class="img-notch-inner">
                         <!-- data-master-idx points to correct index in MASTER_PROJECTS (17) but we force src manually -->
-                        <img src="LW.png" alt="RA Brand Identity" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=RA.png'">
+                        <img src="assets/LW.png" alt="RA Brand Identity" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=RA.png'">
                     </div>
                     <button class="glass-btn corner-glass-btn" data-gallery="design" title="View Project">
                         <i class="fa fa-arrow-up diagonal-arrow"></i>
@@ -5201,7 +5179,7 @@
             <div class="design-item">
                 <div class="img-notch-wrap" data-gallery="design">
                     <div class="img-notch-inner">
-                        <img src="TBH.png" alt="TBH Poster Series" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=TBH.png'">
+                        <img src="assets/TBH.png" alt="TBH Poster Series" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=TBH.png'">
                     </div>
                     <button class="glass-btn corner-glass-btn" data-gallery="design" title="View Project">
                         <i class="fa fa-arrow-up diagonal-arrow"></i>
@@ -5212,7 +5190,7 @@
             <div class="design-item">
                 <div class="img-notch-wrap" data-gallery="design">
                     <div class="img-notch-inner">
-                        <img src="FH.png" alt="QFL2 Social Media Kit" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=QFL2.png'">
+                        <img src="assets/FH.png" alt="QFL2 Social Media Kit" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=QFL2.png'">
                     </div>
                     <button class="glass-btn corner-glass-btn" data-gallery="design" title="View Project">
                         <i class="fa fa-arrow-up diagonal-arrow"></i>
@@ -5223,7 +5201,7 @@
             <div class="design-item">
                 <div class="img-notch-wrap" data-gallery="design">
                     <div class="img-notch-inner">
-                        <img src="QFL2.png" alt="QFL2 Packaging" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=FFL.png'">
+                        <img src="assets/QFL2.png" alt="QFL2 Packaging" style="object-fit: cover;" onerror="this.src='https://via.placeholder.com/400x400?text=FFL.png'">
                     </div>
                     <button class="glass-btn corner-glass-btn" data-gallery="design" title="View Project">
                         <i class="fa fa-arrow-up diagonal-arrow"></i>
@@ -5322,7 +5300,7 @@
         <div class="cta-content">
             <h2 class="cta-title">ARE YOU INTEREST?<br>LET'S WORK TOGETHER</h2>
             <div class="cta-tagline">
-                <img src="Realisasi.jpg" alt="Realised" class="realisasi">
+                <img src="assets/Realisasi.jpg" alt="Realised" class="realisasi">
             </div>
 
             <div class="contact-info">
@@ -6755,23 +6733,6 @@
             document.documentElement.style.overflow = '';
         }
 
-        var _mainSiteRevealed = false;
-        function revealMainSite() {
-            if (_mainSiteRevealed) return;
-            _mainSiteRevealed = true;
-            const mainSite = document.getElementById('main-site');
-            if (!mainSite) return;
-            // Kick off deferred media init FIRST so images start loading
-            // while the fade-in transition is running (hides any flash)
-            if (typeof window.__deferredMediaInit === 'function') {
-                window.__deferredMediaInit();
-                window.__deferredMediaInit = null;
-            }
-            requestAnimationFrame(function() {
-                mainSite.classList.add('site-visible');
-            });
-        }
-
         function runOpening() {
             const overlay  = document.getElementById('opening-overlay');
             const titleEl  = document.getElementById('opOpeningTitle');
@@ -6796,13 +6757,11 @@
                     overlay.removeEventListener('transitionend', onFaded);
                     overlay.classList.add('hidden');
                     unlockScroll();
-                    revealMainSite();
                 }, { once: true });
 
                 setTimeout(function () {
                     overlay.classList.add('hidden');
                     unlockScroll();
-                    revealMainSite();
                 }, 1200);
 
             }, 2600);
@@ -6823,7 +6782,6 @@
                 setTimeout(function () {
                     overlay.classList.add('hidden');
                     unlockScroll();
-                    revealMainSite();
                 }, 1000);
             }
         }, 5000);
@@ -7209,49 +7167,39 @@
         ═══════════════════════════════════════════════════════════ */
         const MASTER_PROJECTS = [
             /* ── Photography 1–10 ─────────────────────────────── */
-            /* 01 */ { type: 'photo',  title: 'hol cafe Desserts',              year: '2024', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-camera',       bg: 'linear-gradient(125deg,#b8aa94,#dac09a,#8a6f4c)',                      src: 'C1.jpg',         alt: 'Photography 1',  desc: 'First ever shot using A6400 mirrorless camera while enjoying desserts.' },
-            /* 02 */ { type: 'photo',  title: 'Favourite Dessert',              year: '2024', medium: 'A6400 · 16-50mm kit lens ',      icon: 'fa-building',     bg: 'radial-gradient(circle at 30% 30%,#6c8ebf,#3a5a8c)',                   src: 'C2.jpg',         alt: 'Photography 2',  desc: 'Another shot that remarks the beginning of the photography journey.' },
-            /* 03 */ { type: 'photo',  title: 'Solemnization Photoshoot',       year: '2025', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-user',         bg: 'repeating-linear-gradient(45deg,#c9a87c 0px,#e8d5b5 30px)',            src: 'WED1.jpg',       alt: 'Photography 3',  desc: 'A portrait session emphasising natural light and authentic emotions. Shot with a framed composition to illustrate the nervous behind a happy ending story.' },
-            /* 04 */ { type: 'photo',  title: 'Wedding Photoshoot',             year: '2025', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-adjust',       bg: 'linear-gradient(112deg,#5a5a5a,#2a2a2a,#8a8a8a)',                      src: 'WED2.jpg',       alt: 'Photography 4',  desc: 'A magnificent portrait of traditional Malay masculinity on his big day, a symbolic fusion of heritage, faith, and the promise of a beautiful future.' },
-            /* 05 */ { type: 'photo',  title: 'bridal dais',                    year: '2025', medium: 'A6400 · 56mm f/1.8',             icon: 'fa-tint',         bg: 'radial-gradient(circle at 70% 20%,#4a90b8,#2d6b8c)',                   src: 'PK.jpg',         alt: 'Photography 5',  desc: 'The clients heart of the ceremony, Where tradition meets the big day. A symbolic frame for a timeless Malay wedding.' },
-            /* 06 */ { type: 'photo',  title: 'Sports Photography',             year: '2024', medium: 'A6400 · 56mm f/1.8',             icon: 'fa-lightbulb-o',  bg: 'linear-gradient(45deg,#1a1a2e 10%,#e94560 80%)',                       src: 'SPORT.jpg',      alt: 'Photography 6',  desc: 'Taekwondo events. Strength in motion, Portraying the intensity of the big match through my lens.' },
-            /* 07 */ { type: 'photo',  title: 'Rencana hati',                   year: '2025', medium: 'Epic Nostalgic moment',          icon: 'fa-search-plus',  bg: 'linear-gradient(145deg,#7a9e7e,#4a7c59)',                              src: 'MFI3.jpg',       alt: 'Photography 7',  desc: 'Capturing the pulse of the stage. Portraying the raw energy and talent of university bands in a single frame.' },
-            /* 08 */ { type: 'photo',  title: 'Rencana hati',                   year: '2025', medium: 'Star of the show',               icon: 'fa-sun-o',        bg: 'linear-gradient(20deg,#ff6b35,#f7c59f,#efefd0)',                       src: 'MFI4.jpg',       alt: 'Photography 8',  desc: 'Stealing the spotlight of the show, Kucaimars with his raw passion of a live performance.' },
-            /* 09 */ { type: 'photo',  title: 'favourite dessert',              year: '2026', medium: 'A6400 · 35mm f/1.8.',            icon: 'fa-moon-o',       bg: 'linear-gradient(135deg,#0f0c29,#302b63,#24243e)',                      src: 'C3.jpg',         alt: 'Photography 9',  desc: 'Met my favourite dessert again after a while, reminding me how far the journey i have been through.' },
-            /* 10 */ { type: 'photo',  title: 'silhouette Portrait',            year: '2025', medium: 'Art Photography · 35mm',         icon: 'fa-street-view',  bg: 'linear-gradient(160deg,#d4a96a,#8c5e2a)',                              src: 'BYG.jpeg',       alt: 'Photography 10', desc: 'Silhouetted forms against a plain old wall. An art photography to unleash the suffocate within the silhouette.' },
+            /* 01 */ { type: 'photo',  title: 'hol cafe Desserts',              year: '2024', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-camera',       bg: 'linear-gradient(125deg,#b8aa94,#dac09a,#8a6f4c)',                      src: 'assets/C1.jpg',         alt: 'Photography 1',  desc: 'First ever shot using A6400 mirrorless camera while enjoying desserts.' },
+            /* 02 */ { type: 'photo',  title: 'Favourite Dessert',              year: '2024', medium: 'A6400 · 16-50mm kit lens ',      icon: 'fa-building',     bg: 'radial-gradient(circle at 30% 30%,#6c8ebf,#3a5a8c)',                   src: 'assets/C2.jpg',         alt: 'Photography 2',  desc: 'Another shot that remarks the beginning of the photography journey.' },
+            /* 03 */ { type: 'photo',  title: 'Solemnization Photoshoot',       year: '2025', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-user',         bg: 'repeating-linear-gradient(45deg,#c9a87c 0px,#e8d5b5 30px)',            src: 'assets/WED1.jpg',       alt: 'Photography 3',  desc: 'A portrait session emphasising natural light and authentic emotions. Shot with a framed composition to illustrate the nervous behind a happy ending story.' },
+            /* 04 */ { type: 'photo',  title: 'Wedding Photoshoot',             year: '2025', medium: 'A6400 · 50mm f/1.8',             icon: 'fa-adjust',       bg: 'linear-gradient(112deg,#5a5a5a,#2a2a2a,#8a8a8a)',                      src: 'assets/WED2.jpg',       alt: 'Photography 4',  desc: 'A magnificent portrait of traditional Malay masculinity on his big day, a symbolic fusion of heritage, faith, and the promise of a beautiful future.' },
+            /* 05 */ { type: 'photo',  title: 'bridal dais',                    year: '2025', medium: 'A6400 · 56mm f/1.8',             icon: 'fa-tint',         bg: 'radial-gradient(circle at 70% 20%,#4a90b8,#2d6b8c)',                   src: 'assets/PK.jpg',         alt: 'Photography 5',  desc: 'The clients heart of the ceremony, Where tradition meets the big day. A symbolic frame for a timeless Malay wedding.' },
+            /* 06 */ { type: 'photo',  title: 'Sports Photography',             year: '2024', medium: 'A6400 · 56mm f/1.8',             icon: 'fa-lightbulb-o',  bg: 'linear-gradient(45deg,#1a1a2e 10%,#e94560 80%)',                       src: 'assets/SPORT.jpg',      alt: 'Photography 6',  desc: 'Taekwondo events. Strength in motion, Portraying the intensity of the big match through my lens.' },
+            /* 07 */ { type: 'photo',  title: 'Rencana hati',                   year: '2025', medium: 'Epic Nostalgic moment',          icon: 'fa-search-plus',  bg: 'linear-gradient(145deg,#7a9e7e,#4a7c59)',                              src: 'assets/MFI3.jpg',       alt: 'Photography 7',  desc: 'Capturing the pulse of the stage. Portraying the raw energy and talent of university bands in a single frame.' },
+            /* 08 */ { type: 'photo',  title: 'Rencana hati',                   year: '2025', medium: 'Star of the show',               icon: 'fa-sun-o',        bg: 'linear-gradient(20deg,#ff6b35,#f7c59f,#efefd0)',                       src: 'assets/MFI4.jpg',       alt: 'Photography 8',  desc: 'Stealing the spotlight of the show, Kucaimars with his raw passion of a live performance.' },
+            /* 09 */ { type: 'photo',  title: 'favourite dessert',              year: '2026', medium: 'A6400 · 35mm f/1.8.',            icon: 'fa-moon-o',       bg: 'linear-gradient(135deg,#0f0c29,#302b63,#24243e)',                      src: 'assets/C3.jpg',         alt: 'Photography 9',  desc: 'Met my favourite dessert again after a while, reminding me how far the journey i have been through.' },
+            /* 10 */ { type: 'photo',  title: 'silhouette Portrait',            year: '2025', medium: 'Art Photography · 35mm',         icon: 'fa-street-view',  bg: 'linear-gradient(160deg,#d4a96a,#8c5e2a)',                              src: 'assets/BYG.jpeg',       alt: 'Photography 10', desc: 'Silhouetted forms against a plain old wall. An art photography to unleash the suffocate within the silhouette.' },
 
             /* ── Cinematography 11–16 ─────────────────────────── */
-            /* 11 */ { type: 'cin',    title: 'Production logo',                year: '2025', medium: '3D after effects montage intro',                         icon: 'fa-video-camera', bg: 'linear-gradient(125deg,#1a1a2e,#16213e,#0f3460)',                      src: 'SFL.MP4',        alt: 'Cinematography 11', desc: 'A motion graphic logo made in Adobe after effects, portraying a shiny 3d texture of a silver in a logo. Design sequence crafted to elevate the first impression.' },
-            /* 12 */ { type: 'cin',    title: 'Brand Logo Montage',             year: '2024', medium: '2D Premiere Pro brand montage video',                    icon: 'fa-music',        bg: 'radial-gradient(circle at 30% 30%,#e94560,#8b1a4a)',                   src: 'ZM.MP4',         alt: 'Cinematography 12', desc: 'Defining the identity. A seamless 2D montage designed to tell a brands story through rhythm and pace while highlighting clients request on design and motorcycle and helmets theme.' },
-            /* 13 */ { type: 'cin',    title: 'Video parody',                   year: '2024', medium: 'A scene parody of a film "Misteri dilaila"',             icon: 'fa-film',         bg: 'repeating-linear(45deg,#4a4a4a 0px,#6a6a6a 30px)',                     src: 'PMD.MP4',        alt: 'Cinematography 13', desc: 'A cinematic project. Reimagining the suspense of Misteri Dilaila through my own creative Perspective. Recreating the same shot only using a mobile device and the editing software.' },
-            /* 14 */ { type: 'cin',    title: 'Thriller Trailer',               year: '2025', medium: 'Clients thriller shortfilm trailer',                     icon: 'fa-star',         bg: 'linear-gradient(112deg,#f7971e,#ffd200)',                              src: 'TT.MP4',         alt: 'Cinematography 14', desc: 'Building the tension. A glimpse into a world of shadows and suspense, edited to keep you on the edge. Motion graphics added in After Effects.' },
-            /* 15 */ { type: 'cin',    title: 'Trailer Montage',                year: '2023', medium: '3D text after effects composition',                      icon: 'fa-eye',          bg: 'radial-gradient(circle at 70% 20%,#667eea,#764ba2)',                   src: 'AE.MP4',         alt: 'Cinematography 15', desc: 'Typography with dimension. Exploring the interplay of light and geometry through 3D motion compositing.' },
-            /* 16 */ { type: 'cin',    title: 'Drama Trailer',                  year: '2024', medium: 'Art Shortfilm trailer',                                  icon: 'fa-users',        bg: 'linear-gradient(45deg,#2c3e50 10%,#3498db 80%)',                       src: 'ST.MP4',         alt: 'Cinematography 16', desc: 'A visual poem. Translating raw artistic vision into a cinematic narrative. A teaser of my latest short film project.' },
+            /* 11 */ { type: 'cin',    title: 'Production logo',                year: '2025', medium: '3D after effects montage intro',                         icon: 'fa-video-camera', bg: 'linear-gradient(125deg,#1a1a2e,#16213e,#0f3460)',                      src: 'assets/SFL.MP4',        alt: 'Cinematography 11', desc: 'A motion graphic logo made in Adobe after effects, portraying a shiny 3d texture of a silver in a logo. Design sequence crafted to elevate the first impression.' },
+            /* 12 */ { type: 'cin',    title: 'Brand Logo Montage',             year: '2024', medium: '2D Premiere Pro brand montage video',                    icon: 'fa-music',        bg: 'radial-gradient(circle at 30% 30%,#e94560,#8b1a4a)',                   src: 'assets/ZM.MP4',         alt: 'Cinematography 12', desc: 'Defining the identity. A seamless 2D montage designed to tell a brands story through rhythm and pace while highlighting clients request on design and motorcycle and helmets theme.' },
+            /* 13 */ { type: 'cin',    title: 'Video parody',                   year: '2024', medium: 'A scene parody of a film "Misteri dilaila"',             icon: 'fa-film',         bg: 'repeating-linear(45deg,#4a4a4a 0px,#6a6a6a 30px)',                     src: 'assets/PMD.MP4',        alt: 'Cinematography 13', desc: 'A cinematic project. Reimagining the suspense of Misteri Dilaila through my own creative Perspective. Recreating the same shot only using a mobile device and the editing software.' },
+            /* 14 */ { type: 'cin',    title: 'Thriller Trailer',               year: '2025', medium: 'Clients thriller shortfilm trailer',                     icon: 'fa-star',         bg: 'linear-gradient(112deg,#f7971e,#ffd200)',                              src: 'assets/TT.MP4',         alt: 'Cinematography 14', desc: 'Building the tension. A glimpse into a world of shadows and suspense, edited to keep you on the edge. Motion graphics added in After Effects.' },
+            /* 15 */ { type: 'cin',    title: 'Trailer Montage',                year: '2023', medium: '3D text after effects composition',                      icon: 'fa-eye',          bg: 'radial-gradient(circle at 70% 20%,#667eea,#764ba2)',                   src: 'assets/AE.MP4',         alt: 'Cinematography 15', desc: 'Typography with dimension. Exploring the interplay of light and geometry through 3D motion compositing.' },
+            /* 16 */ { type: 'cin',    title: 'Drama Trailer',                  year: '2024', medium: 'Art Shortfilm trailer',                                  icon: 'fa-users',        bg: 'linear-gradient(45deg,#2c3e50 10%,#3498db 80%)',                       src: 'assets/ST.MP4',         alt: 'Cinematography 16', desc: 'A visual poem. Translating raw artistic vision into a cinematic narrative. A teaser of my latest short film project.' },
 
             /* ── Graphic Design 17–23 ─────────────────────────── */
-            /* 17 */ { type: 'design', title: 'Brand Identity',                 year: '2025', medium: 'Adobe Illustrator',              icon: 'fa-trademark',       bg: 'linear-gradient(125deg,#ff6b6b,#ee5a24)',                              src: 'LW.png',                  alt: 'Design 17', desc: 'Full brand identity design — logo, colour system, typography and brand guidelines delivered across digital and print formats.' },
-            /* 18 */ { type: 'design', title: 'Event Brand',                    year: '2024', medium: 'Photoshop · Print',              icon: 'fa-picture-o',       bg: 'radial-gradient(circle at 30% 30%,#a29bfe,#6c5ce7)',                   src: 'TBH.png',                 alt: 'Design 18', desc: 'A Fun Game Event brand. Each piece uses bold typographic hierarchy and a cohesive colour story.visually engaging graphics.' },
-            /* 19 */ { type: 'design', title: 'Sports Brand Logo',              year: '2024', medium: 'Adobe Illustrator',              icon: 'fa-share-alt',       bg: 'repeating-linear-gradient(45deg,#00b894 0px, #00cec9 30px)',           src: 'QFL2.png',                alt: 'Design 19', desc: 'A sports brand logo designed carefully with details like color code and font used is included.' },
-            /* 20 */ { type: 'design', title: 'E-learning Brands',              year: '2025', medium: 'Illustrator · Animate',          icon: 'fa-cube',            bg: 'linear-gradient(112deg,#fdcb6e,#e17055)',                              src: 'FFL.png',                 alt: 'Design 20', desc: 'An E-learning Branding design for a local artisan brand. Structural created in Illustrator to build a seamless interface for E-learning project.' },
-            /* 21 */ { type: 'design', title: 'Luxury Brand Poster',            year: '2025', medium: 'Adobe Illustrator · A6400',      icon: 'fa-book',            bg: 'radial-gradient(circle at 70% 20%,#636e72,#2d3436)',                   src: 'POSTER.jpg',              alt: 'Design 21', desc: 'A 20-page editorial magazine layout with custom typography, pull quotes and full-bleed imagery. Prepared for offset print.' },
-            /* 22 */ { type: 'design', title: 'Infographic Poster',             year: '2024', medium: 'Adobe Illustrator',              icon: 'fa-bar-chart',       bg: 'linear-gradient(45deg,#0984e3 10%,#74b9ff 80%)',                       src: 'BRAINHUNTERS.png',        alt: 'Design 22', desc: 'An outdoor Fun Game Event poster. Each piece uses bold typographic hierarchy and a cohesive colour story. Packed with a proper information for the event.' },
-            /* 23 */ { type: 'design', title: 'Event Poster',                   year: '2025', medium: 'Adobe Illustrator',              icon: 'fa-play-circle',     bg: 'linear-gradient(135deg,#f093fb,#f5576c)',                              src: 'PALD.png',                alt: 'Design 23', desc: 'A recent commission for a bowling event. crafting a visually striking infographic Poster packed with essential details, special athlete guest appearances and a glimpse at the winners prize.' },
+            /* 17 */ { type: 'design', title: 'Brand Identity',                 year: '2025', medium: 'Adobe Illustrator',              icon: 'fa-trademark',       bg: 'linear-gradient(125deg,#ff6b6b,#ee5a24)',                              src: 'assets/LW.png',                  alt: 'Design 17', desc: 'Full brand identity design — logo, colour system, typography and brand guidelines delivered across digital and print formats.' },
+            /* 18 */ { type: 'design', title: 'Event Brand',                    year: '2024', medium: 'Photoshop · Print',              icon: 'fa-picture-o',       bg: 'radial-gradient(circle at 30% 30%,#a29bfe,#6c5ce7)',                   src: 'assets/TBH.png',                 alt: 'Design 18', desc: 'A Fun Game Event brand. Each piece uses bold typographic hierarchy and a cohesive colour story.visually engaging graphics.' },
+            /* 19 */ { type: 'design', title: 'Sports Brand Logo',              year: '2024', medium: 'Adobe Illustrator',              icon: 'fa-share-alt',       bg: 'repeating-linear-gradient(45deg,#00b894 0px, #00cec9 30px)',           src: 'assets/QFL2.png',                alt: 'Design 19', desc: 'A sports brand logo designed carefully with details like color code and font used is included.' },
+            /* 20 */ { type: 'design', title: 'E-learning Brands',              year: '2025', medium: 'Illustrator · Animate',          icon: 'fa-cube',            bg: 'linear-gradient(112deg,#fdcb6e,#e17055)',                              src: 'assets/FFL.png',                 alt: 'Design 20', desc: 'An E-learning Branding design for a local artisan brand. Structural created in Illustrator to build a seamless interface for E-learning project.' },
+            /* 21 */ { type: 'design', title: 'Luxury Brand Poster',            year: '2025', medium: 'Adobe Illustrator · A6400',      icon: 'fa-book',            bg: 'radial-gradient(circle at 70% 20%,#636e72,#2d3436)',                   src: 'assets/POSTER.jpg',              alt: 'Design 21', desc: 'A 20-page editorial magazine layout with custom typography, pull quotes and full-bleed imagery. Prepared for offset print.' },
+            /* 22 */ { type: 'design', title: 'Infographic Poster',             year: '2024', medium: 'Adobe Illustrator',              icon: 'fa-bar-chart',       bg: 'linear-gradient(45deg,#0984e3 10%,#74b9ff 80%)',                       src: 'assets/BRAINHUNTERS.png',        alt: 'Design 22', desc: 'An outdoor Fun Game Event poster. Each piece uses bold typographic hierarchy and a cohesive colour story. Packed with a proper information for the event.' },
+            /* 23 */ { type: 'design', title: 'Event Poster',                   year: '2025', medium: 'Adobe Illustrator',              icon: 'fa-play-circle',     bg: 'linear-gradient(135deg,#f093fb,#f5576c)',                              src: 'assets/PALD.png',                alt: 'Design 23', desc: 'A recent commission for a bowling event. crafting a visually striking infographic Poster packed with essential details, special athlete guest appearances and a glimpse at the winners prize.' },
 
             /* ── Website Developing 24–26 ─────────────────────── */
-            /* 24 */ { type: 'web',    title: 'E-commerce Website',             year: '2025', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-graduation-cap',  bg: 'linear-gradient(125deg,#1e3c72,#2a5298)',                              src: 'W3.png',          alt: 'Web 24', desc: 'An e-commerce Chocolate Moist business with product filtering, cart management and a streamlined checkout flow. Optimised for mobile. Responsive across all device sizes.',                                                           url: 'https://kiddjae.github.io/IBUAYU/' },
-            /* 25 */ { type: 'web',    title: 'Portfolio Site',                 year: '2024', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-user-circle',     bg: 'radial-gradient(circle at 30% 30%,#ff5733,#ff8c33)',                   src: 'W2.png',          alt: 'Web 25', desc: 'A personal portfolio site featuring animated sections, Minimalist UI components and a Straightforward experience.',                                                                                                                   url: 'https://kiddjae.github.io/Silverframe-Studio/' },
-            /* 26 */ { type: 'web',    title: 'Wedding E-invitation Card',      year: '2026', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-shopping-cart',   bg: 'repeating-linear-gradient(45deg,#2c2c54 0px,#3d3d6b 30px)',            src: 'WIC.png',          alt: 'Web 26', desc: 'Redefining the invitation. A bespoke digital wedding invitation card experience for my client, blending elegant Malay traditions with seamless UI/UX—featuring live countdowns, integrated navigation, and heartfelt doa.',          url: 'https://kiddjae.github.io/Wedding-E-card-Projects/' }
+            /* 24 */ { type: 'web',    title: 'E-commerce Website',             year: '2025', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-graduation-cap',  bg: 'linear-gradient(125deg,#1e3c72,#2a5298)',                              src: 'assets/W3.png',          alt: 'Web 24', desc: 'An e-commerce Chocolate Moist business with product filtering, cart management and a streamlined checkout flow. Optimised for mobile. Responsive across all device sizes.',                                                           url: 'https://kiddjae.github.io/IBUAYU/' },
+            /* 25 */ { type: 'web',    title: 'Portfolio Site',                 year: '2024', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-user-circle',     bg: 'radial-gradient(circle at 30% 30%,#ff5733,#ff8c33)',                   src: 'assets/W2.png',          alt: 'Web 25', desc: 'A personal portfolio site featuring animated sections, Minimalist UI components and a Straightforward experience.',                                                                                                                   url: 'https://kiddjae.github.io/Silverframe-Studio/' },
+            /* 26 */ { type: 'web',    title: 'Wedding E-invitation Card',      year: '2026', medium: 'UI/UX · HTML · CSS · JS',        icon: 'fa-shopping-cart',   bg: 'repeating-linear-gradient(45deg,#2c2c54 0px,#3d3d6b 30px)',            src: 'assets/W1.png',          alt: 'Web 26', desc: 'Redefining the invitation. A bespoke digital wedding invitation card experience for my client, blending elegant Malay traditions with seamless UI/UX—featuring live countdowns, integrated navigation, and heartfelt doa.',           url: '#' }
         ];
-
-        /* ─── Deferred media init ────────────────────────────────────────
-           buildFilmStrips, updateSectionThumbs, and applyBlurredFills all
-           create <img>/<video> nodes and set src attributes — which fires
-           52+ network requests immediately. Wrapping them here means ZERO
-           asset loading happens while the opener animation is on screen.
-           window.__deferredMediaInit() is called by revealMainSite() the
-           moment the opener fades out.
-        ─────────────────────────────────────────────────────────────── */
-        window.__deferredMediaInit = function () {
 
         /* ─── Populate filmstrip sets from MASTER_PROJECTS ──── */
         (function buildFilmStrips() {
@@ -7407,9 +7355,7 @@
                 wrap.insertBefore(blurEl, media);
                 media.classList.add('blur-fill-main');
             });
-        })(); // applyBlurredFills
-
-        }; // end window.__deferredMediaInit
+        })();
 
         /* ─── Art data per section — derived from MASTER_PROJECTS ── */
         const sectionData = {
@@ -7623,8 +7569,6 @@
 
     })();
     </script>
-
-    </div><!-- /#main-site -->
 
 </body>
 </html>
